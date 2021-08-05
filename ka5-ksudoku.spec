@@ -51,6 +51,11 @@ KSudoku is a logic-based symbol placement puzzle. The player has to
 fill a grid so that each column, row as well as each square block on
 the game field contains only one instance of each symbol.
 
+%description -l pl.UTF-8
+KSudoku jest grą logiczną. Gracz musi wypełnić planszę, tak żeby
+każda kolumna, każdy wiersz i każdy kwadrat zawierał tylko jedno
+wystąpienie danego symbolu.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
