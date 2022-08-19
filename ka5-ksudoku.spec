@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.04.3
+%define		kdeappsver	22.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		ksudoku
 Summary:	ksudoku
 Name:		ka5-%{kaname}
-Version:	22.04.3
+Version:	22.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	32d97e7960be954651c35df795d12354
+# Source0-md5:	7d3778ef06751e5f39eb02cd7280643c
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -96,6 +96,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/16x16/apps/ksudoku.png
 %{_iconsdir}/hicolor/32x32/apps/ksudoku.png
 %{_datadir}/ksudoku
-%dir %{_datadir}/kxmlgui5/ksudoku
-%{_datadir}/kxmlgui5/ksudoku/ksudokuui.rc
 %{_datadir}/metainfo/org.kde.ksudoku.appdata.xml
